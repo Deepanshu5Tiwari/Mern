@@ -13,14 +13,22 @@
             font-family: roboto;
 
         }
+        .{
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
 
         .card {
-            border: 2px solid rgba(39, 39, 218, 0.774);
-            width: 20%;
+            border: 2px solid rgba(17, 206, 159, 0.774);
+            width: 30%;
             border-radius: 10px;
-            padding: 60px;
-            background-color: rgb(40, 212, 224);
-            box-shadow: 3px 3px 5px 2px rgb(40, 26, 228);
+            padding: 0;
+            background-color: rgba(186, 86, 233, 0.836);
+            box-shadow: 3px 3px 5px 2px  rgba(228, 26, 218, 0.788);
+            
 
 
         }
@@ -30,40 +38,44 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-image: linear-gradient(0deg, rgba(219, 219, 243, 0.336), rgba(212, 110, 110, 0.247)), url(https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-business-blue-color-block-earth-background-image_162366.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: linear-gradient(0deg, rgba(219, 219, 243, 0.336), rgba(212, 110, 110, 0.247)), url(https://wallpapers.com/images/featured/neon-purple-ztdssbhzjzb4516a.jpg);
+
+         }
+         
+         .card h1 {
 
 
-
-
-        }
-
-        .form-tile {
-            display: flex;
-            justify-content: center;
+            font-size: 35px;
             text-align: center;
-            height: 100vh;
-            margin-top: 0px;
-            font-weight: bolder;
+         }
 
-
-        }
+         
+         
 
         .text-input {
             display: block;
             box-sizing: border-box;
-            margin-bottom: 10px;
-            padding: 5px 10px;
+            margin-bottom: 20px;
+            padding: 5px 20px;
             font-size: larger;
             font-family: roboto;
+            border: 2px solid blueviolet;
+            border-radius: 40px;
+            width: 100%;
+
+    
         }
 
         .btn {
             margin: 20px 0;
-            background-color: blue;
+            background-color: rgba(0, 0, 255, 0.781);
             color: beige;
             font-weight: bold;
             padding: 7px;
             transition-duration: ;
+            width: 100%;
         }
 
         .btn:hover {
@@ -73,37 +85,62 @@
 
         .input-dpt {
 
-            padding: 30px 50px;
-            text-align: center;
+            padding: 30px 10px;
+            width: 100%;
+            
             box-sizing: border-box;
             margin-bottom: 10px;
-
-
-
-        }
+            text-align: start;
+             
+             font-size: larger;
+             border-radius: 5px;
+             border: 2px solid blueviolet;
+        
     </style>
 </head>
 
 
 <body>
     <div class="card">
-        <h1 class="form-title">CONTACT US</h1>
-        <form>
-            <label for="text">Your Name</label>
-            <input class="text-input" type="text" id="input">
+
+        <form action="">
+            
+            <h1>CONTACT US</h1>
+        
+       
+        
+            <div>
+
+                <input class="text-input" type="text" placeholder="Your Name">
+            </div>
+            
 
 
 
-            <label for="email">Your Email</label>
-            <input class="text-input" type="email" id="email">
+
+            <div>
+                <input class="text-input" type="email" placeholder="Your Email">
+            </div>
+           
 
 
-            <label for="text">Describe</label>
-            <input class="input-dpt" type="text" id="input">
-            <br><br>
+            <div>
+
+                <input class="input-dpt" type="text" placeholder="Description">
+            </div>
+            
+            
 
 
             <button class="btn">Submit</button>
+            
+            
+            
+            
+            
+            
+            </form>
+            
 
 
 
