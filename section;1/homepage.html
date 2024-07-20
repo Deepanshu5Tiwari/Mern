@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+<header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-blue-600 text-sm py-3 sm:py-0">
+    <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
+      <div class="flex items-center justify-between">
+        <a class="flex-none text-3xl font-bold text-white" href="#" aria-label="Brand"> FASHION CITY</a>
+        <div class="sm:hidden">
+          <button type="button" class="hs-collapse-toggle size-9 flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-white/20 text-white hover:border-white/40 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+            <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+            <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-end py-2 md:py-0 sm:ps-7">
+          <a class="py-3 ps-px sm:px-3 font-medium text-white" href="#" aria-current="page">Online</a>
+          <a class="py-3 ps-px sm:px-3 font-medium text-white/80 hover:text-white" href="#">Account</a>
+          
+  
+          <div class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] py-3 ps-px sm:px-3">
+            <button type="button" class="flex items-center w-full text-white/80 hover:text-white font-medium">
+              Category
+              <svg class="flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+  
+            <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 bg-white sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5">
+              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300" href="#">
+                About
+              </a>
+              <div class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover] relative">
+                <button type="button" class="w-full flex justify-between items-center text-sm text-gray-800 rounded-lg py-2 px-3 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300">
+                  Sub Menu
+                  <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+  
+                <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 sm:mt-2 bg-white sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute sm:border before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full">
+                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300" href="#">
+                    About
+                  </a>
+                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300" href="#">
+                    Downloads
+                  </a>
+                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300" href="#">
+                    Team Account
+                  </a>
+                </div>
+              </div>
+  
+              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300" href="#">
+                Downloads
+              </a>
+              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300" href="#">
+                Team Account
+              </a>
+            </div>
+          </div>
+  
+          <a class="flex items-center gap-x-2 font-medium text-white/80 hover:text-white sm:border-s sm:border-white/30 py-2 md:py-0 sm:my-6 sm:ps-6" href="#">
+            <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Log in
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ========== END HEADER ========== -->
+  
+ <main>
+ <section class="py-3 px-2 border-1">
+    <div class="flex  justify-between items-center">
+      <div class=" ">
+            <img class="h-[10vh]" src="https://seeklogo.com/images/O/online-shopping-cart-logo-A1B78BD19B-seeklogo.com.png" alt="">
+     </div>
+
+
+          <div class="  rounded-2xl   ">
+                <label for="Category"></label>
+                <select class="border-4 border-black rounded-2xl" name="" id="Category">
+                    <option value="">All Categories</option>
+                </select>
+                
+                 <input type="search" class="border-4 rounded-2xl border-black" >
+                 <label for="search" >🔍</label>
+          </div>
+               
+                <div>
+                    🛒   🤍
+
+                </div>
+                    
+                
+
+
+
+    </div>
+ </section>
+ <section class="border-2 font-bold py-5 px-3">
+          <div class="flex justify-between">
+            <div><H1 class="text-xl font-bold">⨁ INDIAN PRODUCTS</H1>
+                <p class="text-gray-400 font-bold">FIND PRODUCTS</p>
+            </div>
+
+            <div><H1 class="text-xl font-bold">💵 SECURE PAYMENTS</H1>
+                <P class="text-gray-400">PROTECTION SYSTEM</P>
+            </div>
+
+            <div><h1 class="text-xl font-bold">🔁 EASY RETURNS</h1>
+                <P class="text-gray-400">EASY TO RETURN</P>
+            </div>
+
+            <div><h1 class="text-xl font-bold">🎧 24X7 SUPPORTS</h1>
+                <P class="text-gray-400">READY TO HELP</P>
+            </div>
+         </div>
+ </section>
+ <section class="mt-5">
+    <div  >
+        <div class="flex justify-between font-semibold px-6 pb-8 text-2xl">
+            <h1 class="font-bold text-3xl underline">Flash Deals</h1>
+            <h1>Daily Deals</h1>
+            <h1>New Arrivals</h1>
+            <h1>Inspection Goods</h1>
+            <h1>Just For You</h1>
+            <h1>Made In INDIA</h1>
+
+
+        </div>
+
+
+
+        <div class="grid grid-cols-2 mt-3 border-2  border-1 rounded-xl  mx-10   ">
+
+            <div class="bg-gray-800 py-20 px-8  ">
+                <h1 class="font-bold text-5xl text-white ">FASHION </h1>
+                 <h1 class="font-bold text-5xl text-white">CLEARANCE SALE</h1>
+                 <p class="text-gray-200 font-bold pb-14">UP TO 70% OFF</p>
+
+
+                 <button class="text-xl  font-bold  border-2 rounded-md bg-white text-black hover:text-blue-600 px-3 py-2 ">SHOP NOW</button>
+                
+
+            </div>
+            <div class="h-full cover">
+                <img class="h-full w-full" src="https://as1.ftcdn.net/v2/jpg/05/31/55/96/1000_F_531559675_oqCOtf6xYipclpBb4LxLswA8gql7BZbA.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="grid grid-cols-7 gap-10 mt-5 px-10 ">
+          
+
+          <div> <img class="block h-[20vh] border-2 shadow-xl rounded-md w-[20vh]" src="https://www.buildmypc.in/wp-content/uploads/2023/10/71PxjoUHaTL._SX679_-300x300.jpg" alt=""></div>
+
+          <div> <img class="block h-[20vh] border-2 shadow-xl rounded-md w-[20vh]" src="https://greensshopping.com/images/product/thumbnail/1719980732lZmCJUIEv7KItR1CeLTXzCQuJJc0teOJ7Cme7xW5.jpeg" alt=""></div>
+
+          <div> <img class="block h-[20vh] border-2 shadow-xl rounded-md w-[20vh]" src="https://www.khoslaonline.com/wp-content/uploads/2023/06/ONE-PLUS-NORD-CE-2-LITE-5G-BLUE-TIDE-6GB128GB.png" alt=""></div>
+
+          <div> <img class="block h-[20vh] border-2 shadow-xl rounded-md w-[20vh]" src="https://www.zoomshoes.in/cdn/shop/products/9_1.jpg?v=1619594466" alt=""></div>
+
+          <div> <img class="block h-[20vh] border-2 shadow-xl rounded-md w-[20vh]" src="https://m.media-amazon.com/images/I/6166QQmf+YL._AC_UY1000_.jpg" alt=""></div>
+
+          <div> <img class="block h-[20vh] border-2 shadow-xl rounded-md w-[20vh]" src="https://www.ulcdn.net/images/products/732065/product/VALTTL62BR62243_LP.jpg?1676291935" alt=""></div>
+
+          <div> <img class="block h-[20vh] border-2 shadow-xl rounded-md w-[20vh]" src="https://rukminim1.flixcart.com/image/300/300/xif0q/dress/h/s/i/l-sequancegown-mivya-original-imagpjfbeyngm7bb.jpeg" alt=""></div>
+
+
+
+
+        </div>
+        
+
+
+    </div>
+ </section>
+ <section>
+       <div class="grid grid-cols-3 gap-3 mt-10 ">
+
+            <div class="grid grid-cols-3 bg-gray-300 shadow-xl  rounded-md">
+              <div class="col-span-2 font-bold text-xl px-3  py-20 "><h1 class="text-4xl">Sunglasses</h1>
+                <br>
+                  <button class="  bg-yellow-500 border-yellow-500 rounded-md hover:text-blue-600 px-3 py-2">SHOP NOW</button>
+              </div>
+                 <div><img class="h-[40vh]  px-3 py-2 block col-span-3 " src="https://ampere.shop/cdn/shop/files/Dusk-Blackframewithdarktint_polarizedlenses_969c55e5-54b3-44bc-ad49-3c0eac2e49f5_1100x.jpg?v=1704269504" alt=""></div>
+
+            </div>
+       
+               
+               
+            <div class="grid grid-cols-3 bg-gray-300 shadow-xl border-2 rounded-md"> 
+              <div class="col-span-2 font-bold text-xl px-3 py-20"><h1 class="text-4xl">Women Shoes</h1>
+                <br>
+                    <button class="  bg-yellow-500 border-yellow-500 rounded-md hover:text-blue-600 px-3 py-2">SHOP NOW</button>
+                  </div>
+                    <div><img class="h-[40vh] px-3 py-2 " src="https://5.imimg.com/data5/QO/AT/VK/SELLER-81781885/women-causal-shoes.Jpeg" alt=""></div>
+            </div>
+
+            <div class="border-red-500 border-4 bg-gray-300 rounded-md  text-center pt-10">
+              <h1 class="text-red-600 text-4xl font-bold mt-10">Sell Your Product</h1>
+              <h3 class="text-red-600 text-2xl font-bold ">at affordable price</h3>
+              <button class="bg-red-700 text-white mt-5 rounded-md text-3xl font-bold py-2 px-3">SELL NOW</button>
+               
+              
+            
+            </div>
+       </div>
+
+ </section>
+
+ <section> 
+  <div class=" mt-8">
+    <div class="flex justify-between">
+      <div><h1 class="font-bold text-3xl">TRENDING DEALS</h1>
+      </div>
+
+      <div class="grid grid-cols-4 font-bold text-xl ">
+
+        <h3 class="underline text-red-600">ALL</h3>
+        <h3>TV</h3>
+        <h3>COMPUTERS</h3>
+        <h3>SMARTWATCHES</h3>
+
+      </div>
+    
+    </div>
+    <br>
+    <div class="grid grid-cols-4 gap-4 ">
+      <div class="border-2 shadow-md rounded-lg  font-bold text-xl text-center"><img src="https://5.imimg.com/data5/SELLER/Default/2024/3/398833580/NI/PN/ZR/10698546/noise-wireless-earbuds-500x500.jpeg" alt="">
+      <h1>25% off </h1>
+     <h1 class="border-2 bg-black text-white">SNEAKERS</h1></div>
+
+       <div class="border-2 shadow-md rounded-lg  font-bold text-xl text-center"><img src="https://5.imimg.com/data5/ANDROID/Default/2021/2/TB/IJ/PZ/29603120/product-jpeg-500x500.jpg" alt="">
+        <h1>55% off </h1>
+        <h1 class="border-2 bg-black text-white">GOWN</h1></div>
+     
+       <div class="border-2 shadow-md rounded-lg  font-bold text-xl text-center"><img src="https://m.media-amazon.com/images/I/51-twh2z01L._AC_.jpg" alt=""><h1>25% off </h1>
+        <h1 class="border-2 bg-black text-white">DECORATIVES</h1></div>
+
+       <div class="border-2 shadow-md rounded-lg  font-bold text-xl text-center"><img  src="https://5.imimg.com/data5/DI/ZS/CP/SELLER-50489472/fortex-hd-ready-ips-led-tv-500x500.jpg" alt=""><h1>10% off </h1>
+        <h1 class="border-2 bg-black text-white">TELEVISION</h1></div>
+
+    </div>
+
+
+  </div>
+ </section>
+
+ </main>
+
+
+ <footer class=" bg-gray-300 mt-5">
+  <div class="grid grid-cols-12 lg:max-w-[80%]  md:max-w-[90%] max-w-[98%] mx-auto text-center">
+    <div class="col-span-12 md:col-span-3">
+      <h1 class="text-2xl font-bold my-3">BRAND NAME</h1>
+      <p class="text-lg font-bold">2024, Reserved all rights©</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, id?</p>
+     
+
+    </div>
+    <div class="col-span-3">
+      <h1 class="text-xl font-bold my-3 underline">Quick Links</h1>
+      <a class="block text-black hover:text-blue-600 text-lg" href="#">Home</a>
+      <a class="block text-black hover:text-blue-600 text-lg" href="#">About</a>
+      <a class="block text-black hover:text-blue-600 text-lg" href="#">Contact</a>
+      <a class="block text-black hover:text-blue-600 text-lg" href="#">Services</a>
+    </div>
+    <div class="col-span-3">
+      <h1 class="text-xl font-bold my-3 underline">Partners</h1>
+      <a class="block text-black hover:text-blue-600 text-lg" href="#">TIGC</a>
+      <a class="block text-black hover:text-blue-600 text-lg" href="#">Arrow</a>
+      <a class="block text-black hover:text-blue-600 text-lg" href="#">Hilfigher</a>
+      <a class="block text-black hover:text-blue-600 text-lg" href="#">Roadster</a>
+
+    </div>
+    <div class="col-span-3">
+      <h1 class="text-xl font-bold my-3 underline">Social Links</h1>
+      <a class="block text-black hover:text-blue-600 text-lg" href="#">Discord</a>
+      <a class="block text-black hover:text-blue-600 text-lg" href="#">Watsapp</a>
+      <a class="block text-black hover:text-blue-600 text-lg" href="#">Facebook</a>
+      <a class="block text-black hover:text-blue-600 text-lg" href="#">Instagram</a>
+
+
+
+
+    </div>
+
+
+
+
+
+
+  </div>
+</footer>
+
+</body>
+</html>
