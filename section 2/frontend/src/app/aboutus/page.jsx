@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <div className='border-2 border-black space-y-6'>
 
-      <h1 className='text-center font-bold text-7xl mt-5 text-blue-800'>ABOUT US</h1>
+      <h1 className='text-center font-bold text-7xl mt-5 text-blue-800  '>   ABOUT US </h1>
       
 
       <div className=' '> 
@@ -27,10 +27,10 @@ const AboutUs = () => {
         <h1 className='font-bold text-7xl text-center'> DIRECTORS </h1>
         <div className='grid grid-cols-3 gap-5 '>
         <div className='border-2 border-black space-y-6 p-4 rounded-md '> 
-            <h1 className='font-bold text-3xl text-center underline'>Deepanshu Mehta</h1>
+            <h1 className='font-bold text-3xl text-center underline'>Deepanshu Tiwari</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio officiis nulla! Aperiam fugiat cupiditate numquam commodi, fugit dolor magni quibusdam veniam repellendus. Quam earum molestiae consectetur non. Sint, hic.</p>
         </div>
-        <div className='border-2 border-black space-y-6 p-4 rounded-md '><h1 className='font-bold text-3xl text-center underline'>Shivam Srivastav</h1>
+        <div className='border-2 border-black space-y-6 p-4 rounded-md '><h1 className='font-bold text-3xl text-center underline'>Shivam Srivastava</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur tenetur sint voluptatibus accusamus magni inventore nihil exe, illum, commodi non voluptatum nostrum repudiandae animi unde ipsa, ratione necessitatibus.</p></div>
         <div className='border-2 border-black space-y-6 p-4 rounded-md '><h1 className='font-bold text-3xl text-center underline'>Shivendra Verma </h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores a corporis modi suscipit dignissimos, amet sit. Aliquam reiciendis totam inventore ratione modi ut corrupti, voluptas tempora nostrum. Totam, temporibus esse!</p></div>
