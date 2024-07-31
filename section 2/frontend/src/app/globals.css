@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn{
+      background-color: black;
+      color: white;
+      padding: 10px 5px;
+      border-radius: 5px;
+
+}
