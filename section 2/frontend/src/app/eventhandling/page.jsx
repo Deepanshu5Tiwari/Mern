@@ -40,7 +40,7 @@ const EventHandling = () => {
          className='border rounded bg-gray-200 hover:bg-white px-3 py-1'>Click Me</button>
 
          <input 
-        onChange={(e)=> {console.log( e.target.value );}}
+        onChange={(e)=> {console.log( e.target.value );}} 
          className='mt-5 border border-black px-3 py-1 rounded w-full' type="text" />   
 
          <input
