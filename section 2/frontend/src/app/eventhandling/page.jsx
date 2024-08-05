@@ -23,13 +23,11 @@ const EventHandling = () => {
   return (
     
     <div className='max-w-3xl mx-auto my-10 border'
-    onMouseMove={e => {
+        onMouseMove={e => {
         document.getElementById("circle").style.left = e.clientX - 20 + 'px';
         document.getElementById("circle").style.top = e.clientY - 20 + 'px';
 
-    }
-
-    } >
+       } } >
 
         <div id='circle' onMouseDown={(e) => { e.target.style.height = '30px' ; e.target.style.width = '30px';}} 
          onMouseUp={(e) => { e.target.style.height = '46px' ; e.target.style.width = '46px';}}
