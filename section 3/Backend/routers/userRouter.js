@@ -2,13 +2,19 @@ const express = require('express');
 
 const router = express.Router();
 
-router.get('/add', (req, res) => {
-    res.send('Response from user add');
+router.post('/add', (req, res) => {
+    console.log(req.body);
+    
+    res.send('Response from user add here');
 });
+
 router.get('/getall', (req, res) => {
     res.send('Response from user getall');
 });
-router.get('/getbyid', (req, res) => {
+//: colon denotes url parameter
+router.get('/getbyid/:id', (req, res) => {
+    console.log(req.params.id);
+    
     res.send('Response from user id');
 });
 router.get('/update', (req, res) => {
