@@ -1,4 +1,5 @@
 const express = require('express');
+const model = require('../models/productModel');
 const router = express.Router();
 
 router.get('/', (req, res) =>{res.send ('All Products are open now')})
