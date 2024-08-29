@@ -1,7 +1,9 @@
-const express = require('express');
+const express = require ('express');
 const Model = require('../models/userModel');
-
+ 
 const router = express.Router();
+
+
 
 router.post('/add', (req, res) => {
     console.log(req.body);
@@ -12,8 +14,12 @@ router.post('/add', (req, res) => {
    })
    .catch((err) => {
     console.log(err);
-    
-      res.status(500).json(err);
+    if(err.code === 11000){
+        res.status(500).json({ message: 'Email already exists'});
+    }else{
+        res.status(500).json({ message: 'something went wrong'});
+    }
+      
    });
 
 });
@@ -61,8 +67,16 @@ router.get('/getbyid/:id', (req, res) => {
     
    });
 });
-router.get('/update', (req, res) => {
-    res.send('Response from user update');
+router.put('/update/:id', (req, res) => {
+   Model.findByIdAndUpdate(req.params.id, req.body, { new: true })
+   .then((result) => {
+    res.status(200).json(result);
+
+   }).catch((err) => {
+    console.log(err);
+    res.status(500).json(err);
+    
+   });
 });
 router.delete('/delete/:id', (req, res) => {
     Model.findByIdAndDelete(req.params.id)

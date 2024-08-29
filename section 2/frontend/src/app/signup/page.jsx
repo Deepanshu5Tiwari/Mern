@@ -3,6 +3,8 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import React from 'react';
 import { IconCircleCheck, IconLoader, IconLoader3 } from '@tabler/icons-react';
+import axios, { Axios } from 'axios';
+import toast from 'react-hot-toast';
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
     .min(2, 'Too Short!')
@@ -21,7 +23,7 @@ const SignupSchema = Yup.object().shape({
 
 const signup = () => {
 
- const signupForm = useFormik({
+ const signupForm = useFormik ({
   initialValues: {
     name : '',
     email : '',
@@ -31,18 +33,30 @@ const signup = () => {
   },
   onSubmit: (values, { resetForm, setSubmitting }) => {
 
-    setTimeout(() => {
-      console.log(values);
+    //setTimeout(() => {
+    //  console.log(values);
       // resetForm();
-      setSubmitting(false)
-    }, 3000);
+   //   setSubmitting(false)
+ //   }, 3000);
 
-   
-   
+   //making a request
+   axios.post('http://localhost:5000/user/add', values)
+   .then((response) => {
+    console.log(response.status);
+    resetForm();
+    toast.success('user registered successfully');
+   }).catch((err) => {
+    console.log(err);
+    console.log(err.response?.data);
+    setSubmitting(false);    
+    toast.error(err?.response?.data?.message);
+   });
+    
+    
   },
   validationSchema: SignupSchema
  });
-
+    
   return (
     <div className='flex justify-center items-center h-screen' >
        <div className='w-full max-w-md mx-auto'>
@@ -65,7 +79,7 @@ const signup = () => {
               <label htmlFor="password">Password</label>
               <span className='text-sm ml-4 text-red-500 '>{signupForm.touched.password && signupForm.errors.password}</span>
               <input id='password' onChange={signupForm.handleChange} value={signupForm.values.password} type="password" 
-              className={'border rounded w-full px-3 py-2 mb-4 ' + 
+             className={'border rounded w-full px-3 py-2 mb-4 ' + 
                 ((signupForm.touched.password && signupForm.errors.password) ? 'border-red-500' : '')}/>
 
               <label htmlFor="confirmPassword">Confirm Password</label>
