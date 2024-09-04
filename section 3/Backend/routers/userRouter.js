@@ -1,6 +1,8 @@
 const express = require ('express');
 const Model = require('../models/userModel');
- const jwt = require('jsonwebtoken')
+ const jwt = require('jsonwebtoken');
+const verifyToken = require('./verifyToken');
+ require('dotenv').config();
 const router = express.Router();
 
 
@@ -44,7 +46,7 @@ router.get('/getbycity/:city', (req, res) => {
         });
 });
 
-router.get('/getall', (req, res) => {
+router.get('/getall', verifyToken, (req, res) => {
 
     Model.find()
         .then((result) => {
@@ -95,7 +97,24 @@ router.post('/authenticate', (req, res) => {
     Model.findOne(req.body)
     .then((result) => {
         if(result){
+            const { _id, name, email, password } = result;
+            const payload = { _id, name, email, password };
+
             //generate token
+            jwt.sign(
+                payload,
+                process.env.JWT_SECRET,
+                {expiresIn: 3600},
+                (err, token) => {
+                    if (err) {
+                        console.log(err);
+                        res.status(500).json(err);
+                        
+                    } else {
+                        res.status(200).json({ token });
+                    }
+                }
+            )
         }else{
             res.status(401).json({message: 'Invalid credentials'});
         }
