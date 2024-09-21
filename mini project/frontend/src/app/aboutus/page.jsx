@@ -1,23 +1,36 @@
 import React from 'react'
 import 'react-slideshow-image/dist/styles.css'
 
+
+
 const AboutUS = () => {
   return (
     <div>
       <>
   {/* Features */}
   <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-green-300">
-    <div
-    className='flex justify-center bg-cover bg-no-repeat h-[60vh]  '
-    style={{backgroundImage: `url('https://www.flex-europa.me/mediafiles/Content/UploadImages/Shutterstock_2107159877%20(4).jpg')`}}>
+    <div  className=' object-cover bg-no-repeat h-[90vh] relative overflow-hidden w-[100%]'>
+    <video className="absolute top-0 left-0 w-full h-full object-cover"
+      src="/eco.mp4"
+      autoPlay
+      loop
+      muted />
+      <div
+      aria-hidden="true"
+    className=' flex absolute  start-1/2 transform -translate-x-1/2' >
+      
      <div className='my-10'>
-     <h1 className='text-7xl font-bold text-white   '>Eco Friendly</h1>
-     <h1 className='text-7xl font-bold text-white  '>Market</h1>
+     <h1 className='text-8xl font-bold text-white   '>Eco Friendly</h1>
+     <h1 className='text-8xl font-bold text-white  '>Market</h1>
      <br />
-     <p className='text-xl font-bold text-white  '>Market to have little or no damaging effect on the environment</p>
-     <p className='text-xl font-bold text-white  '>For bright future</p>
+     <p className='text-2xl font-bold text-white  '>Market to have little or no damaging effect on the environment for bright future</p>
+     
+     <br />
+     <p className='text-xl font-bold text-white  '></p>
      </div>
     </div>
+    </div>
+    
     <div className='flex justify-center  bg-cover h-[40vh]'
     style={{backgroundImage: `url('https://olabamboo.com/wp-content/uploads/2021/08/Olabamboo-header-optimized-final.jpg')`}}
     >

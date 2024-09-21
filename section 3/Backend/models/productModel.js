@@ -1,4 +1,4 @@
-const { model, Schema,  } = require('../connection');
+ //producconst { model, Schema,  } = require('../connection');
 
 const mySchema = new Schema({
     title : String,
@@ -10,4 +10,4 @@ const mySchema = new Schema({
     createdAt : { type : Date, default: Date.now }
 });
 
-module.exports = model('products', mySchema); //product is collection name
+module.exports = model('products', mySchema);

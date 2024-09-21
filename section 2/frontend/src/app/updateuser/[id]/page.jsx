@@ -36,7 +36,7 @@ const UpdateUser = () => {
     }
   return (
     <div>
-      <div className='max-w-xl mx-auto p-5 border rounded-lg mt-5 shadow'>
+      <div className='max-w-xl mx-auto p-5 border rounded-lg mt-5 shadow '>
      <h1 className='text-2xl text-center font-bold'>Update User Details</h1>
      {
         userData !== null ? (
@@ -83,5 +83,6 @@ const UpdateUser = () => {
     </div>
   )
 }
+
 
 export default UpdateUser;

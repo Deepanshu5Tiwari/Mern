@@ -19,7 +19,7 @@ const Navbars = () => {
             href="/"
             aria-label="Preline"
           >
-            My React App
+            User ZX
           </a>
         </div>
         {/* End Logo */}
@@ -88,6 +88,36 @@ const Navbars = () => {
             href="/login"
           >
             Login 
+          </Link>
+          <Link
+            className= {"py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-none " +( path === '/login'?  'border-neutral-200 text-neutral-200' : 'border-transparent text-neutral-400')}
+            href="/eventhandling"
+          >
+            Events
+          </Link>
+          <Link
+            className= {"py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-none " +( path === '/login'?  'border-neutral-200 text-neutral-200' : 'border-transparent text-neutral-400')}
+            href="/manageusers"
+          >
+            Manage User 
+          </Link>
+          <Link
+            className= {"py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-none " +( path === '/login'?  'border-neutral-200 text-neutral-200' : 'border-transparent text-neutral-400')}
+            href="/todolist"
+          >
+            Reminder
+          </Link>
+          <Link
+            className= {"py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-none " +( path === '/login'?  'border-neutral-200 text-neutral-200' : 'border-transparent text-neutral-400')}
+            href="/uploadingfile"
+          >
+            ⬆ Upload File 
+          </Link>
+          <Link
+            className= {"py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-none " +( path === '/login'?  'border-neutral-200 text-neutral-200' : 'border-transparent text-neutral-400')}
+            href="/updateuser"
+          >
+            updateUser 
           </Link>
           
           <Link
