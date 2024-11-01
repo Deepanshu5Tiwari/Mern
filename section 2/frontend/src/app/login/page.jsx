@@ -32,7 +32,7 @@ const login = () => {
     <div className='flex justify-center items-center h-screen' >
        <div className='w-full max-w-md mx-auto'>
           <div className='rounded-lg border-2 shadow p-8'>
-            <h1 className='uppercase font-bold my-6 text-2xl text-center text-blue-600'>Login Here</h1>
+            <h1 className='uppercase font-bold my-6 text-xl text-center text-blue-600'>Login Here</h1>
             <form onSubmit={ signupForm.handleSubmit }>
               <label htmlFor="name">User Name</label>
               <span className='text-sm text-red-500 '>{signupForm.touched.name && signupForm.errors.name}</span>

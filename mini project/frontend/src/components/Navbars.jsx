@@ -16,11 +16,12 @@ const Navbars = () => {
     <nav className="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 py-2 px-4 sm:px-6 lg:px-8">
       <div className="flex justify-between items-center gap-x-1">
         <a
-          className="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 dark:text-white"
+          className="flex font-bold text-3xl  text-black focus:outline-none focus:opacity-80 dark:text-white"
           href="#"
           aria-label="Brand"
         >
-          Brand
+          <img className='rounded-full h-[10vh]' src="https://static.vecteezy.com/system/resources/thumbnails/014/622/904/small_2x/solar-home-icon-houses-using-solar-roofs-for-home-appliances-concept-of-natural-energy-png.png" alt="" />
+          <h1 className='pt-5'>MART</h1>
         </a>
         {/* Collapse Button */}
         <button
@@ -78,7 +79,7 @@ const Navbars = () => {
             <div className="grow">
               <div className="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-1">
               <Link
-                  className="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                  className="p-2 flex items-center text-lg text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                   href="/"
                 >
                   <svg
@@ -102,52 +103,10 @@ const Navbars = () => {
                 </Link>
              
              
-                <Link
-                  className="p-2 flex items-center text-sm text-red-600 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-                  href="/addProduct"
-                >
-                  <svg
-                    className="shrink-0 size-4 me-3 md:me-2 block md:hidden"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-                    <circle cx={12} cy={7} r={4} />
-                  </svg>
-                  SELL PRODUCT
-                </Link>
+                
                
                 <Link
-                  className="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-                  href="/productList"
-                >
-                  <svg
-                    className="shrink-0 size-4 me-3 md:me-2 block md:hidden"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-                    <circle cx={12} cy={7} r={4} />
-                  </svg>
-                  ALL PRODUCTS 
-                </Link>
-               
-                <Link
-                  className="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                  className="p-2 flex items-center text-lg text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                   href="/aboutus"
                 >
                   <svg

@@ -32,9 +32,9 @@ const contact = () => {
             </div>
             
            
-            <label htmlFor="Number">Contact Number</label>
+            <label htmlFor="num">Contact Number</label>
             <br />
-            <input type="number" id='Number' className={' border rounded w-1/2 px-3 py-2 mb-4'} />
+            <input type="numb" id='Num' className={' border rounded w-1/2 px-3 py-2 mb-4'} />
             <br />
             
             <label htmlFor="email">Email </label>

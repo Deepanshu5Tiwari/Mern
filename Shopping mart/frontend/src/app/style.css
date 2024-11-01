@@ -1,0 +1,42 @@
+/**********  Logo and Search Panel CSS Code Starts  **********/
+.search-panel {
+    background: #f13f31;
+    padding: 12px 0px;
+  }
+  .search-textbox {
+    padding-left: 16px;
+    height: 40px;
+    width: 80%;
+    border: 1px solid #fff;
+    float: left;
+  }
+  .search-button {
+    height: 42px;
+    width: 55px;
+    border: none;
+    background: white;
+    float: left;
+  }
+  .search-button i {
+    color: #f13f31;
+  }
+  .cart-sect {
+    list-style: none;
+    float: right;
+    margin-top: 8px;
+  }
+  .cart-sect li {
+    float: left;
+    padding: 0px 6px;
+  }
+  .cart-sect li a {
+    font-size: 14px;
+    color: #ffffff;
+    
+    text-decoration: none;
+  }
+  .cart-sect li i {
+    font-size: 14px;
+    color: #ffffff;
+  }
+  /**********  Logo and Search Panel CSS Code Ends  **********/

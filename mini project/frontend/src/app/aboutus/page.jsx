@@ -240,7 +240,7 @@ const AboutUS = () => {
                 </svg>
                 <span className="grow">
                   <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
-                    Greeb Innovation
+                    Green Innovation
                   </span>
                   <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
                   The marketplace promote sustainable product innovation. They create demand for Eco-Friendly products. This supports the growth of green industries

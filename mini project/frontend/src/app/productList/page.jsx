@@ -34,7 +34,7 @@ const ExploreProducts = () => {
     (searchPrice ? product.Price === searchPrice : true)
   );
 
-  const handleTypeChange = (e) => setSelectedType(e.target.value);
+  
   const handleCategoryChange = (e) => setSelectedCategory(e.target.value);
   const handlePriceChange = (e) => setSearchPrice(e.target.value);
 
@@ -43,21 +43,6 @@ const ExploreProducts = () => {
     <div className="w-1/4 bg-white shadow-lg p-6 rounded-lg">
       <h2 className="text-xl font-bold mb-4">Filter Product</h2>
 
-      <div className="mb-4">
-        <label htmlFor="product-Type" className="block text-gray-700 mb-1">Type</label>
-        <select
-          id="product-type"
-          value={selectedType}
-          onChange={handleTypeChange}
-          className="border rounded w-full px-3 py-2"
-        >
-          <option value="">All Types</option>
-          <option value="Fashion">Fashion Wear</option>
-          <option value="Accesories">Accesories</option>
-          <option value="Others">Others</option>
-          {/* Add more options as needed */}
-        </select>
-      </div>
 
       <div className="mb-4">
         <label htmlFor="product-Category" className="block text-gray-700 mb-1">Category</label>
@@ -71,7 +56,7 @@ const ExploreProducts = () => {
           <option value="Jute">Jute</option>
           <option value="Soy Silk">Soy Silk</option>
           <option value="Hemp">Hemp</option>
-          <option value="Organic Cotton">Organic Cotton</option>
+          <option value="Organic Cotton">Others</option>
           {/* Add more options as needed */}
         </select>
       </div>
@@ -80,18 +65,7 @@ const ExploreProducts = () => {
     {/* Pets Display Area */}
     <div className="w-3/4 p-6">
       {/* Search Bar */}
-      <div className="mb-6">
-        <label htmlFor="search-Price" className="block text-black text-2xl font-bold mb-1">Search by Price</label>
-        <input
-          id="search-Price"
-          type="text"
-          value={searchPrice}
-          onChange={handlePriceChange}
-          placeholder="Search by Price Range"
-          className="border rounded w-full px-3 py-2"
-        />
-      </div>
-
+     
       <h2 className="text-2xl font-bold mb-6">Available Products</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredProduct.length > 0 ? (
